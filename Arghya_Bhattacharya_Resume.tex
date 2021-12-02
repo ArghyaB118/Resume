@@ -22,7 +22,7 @@
 
 \begin{tabular*}{\textwidth}{ m{3.5cm} m{3.5cm} m{3.5cm} m{3.5cm} m{3.5cm} m{3.5cm} }
 \underline{\href{mailto:argbhattacha@cs.stonybrook.edu}{\includegraphics[width=0.25in,height=0.20in]{Figures/email.png}}} &
-\underline{{\href{https://www.linkedin.com/in/arghya-bhattacharya-42522797/}{\includegraphics[width=0.25in,height=0.25in]{Figures/linkedin.png}}}} &
+\underline{{\href{https://www.linkedin.com/in/reach-arghya-bhattacharya/}{\includegraphics[width=0.25in,height=0.25in]{Figures/linkedin.png}}}} &
 \underline{{\href{https://scholar.google.com/citations?user=tvw7c5wAAAAJ&hl=en}{\includegraphics[width=0.25in,height=0.25in]{Figures/googlescholar.png}}}} &
 \underline{{\href{https://github.com/ArghyaB118}{\includegraphics[width=0.25in,height=0.25in]{Figures/github.png}}}} &
 \underline{\href{tel:(+1)934-777-9896}{\includegraphics[width=0.25in,height=0.25in]{Figures/call.png}}} &
@@ -60,7 +60,8 @@
 \begin{tabular*}{\textwidth}{ m{3cm} m{2cm} }
 \rowcolor{Gray} C++ & Python \\
 \rowcolor{Gray} Shell & Latex \\
-\rowcolor{Gray} MySQL & Keras \\
+\rowcolor{Gray} MySQL & Matlab \\
+\rowcolor{Gray} Keras & PyTorch \\
 \end{tabular*}
 \end{center}
 \end{minipage}
@@ -70,10 +71,10 @@
 \resumeSubHeadingListStart
 \resumeSubheading{Stony Brook University}{Stony Brook,NY}{Research Project Assistant}{Summer 2019 - Present}
 \resumeItemListStart
-\item \justifying{\textbf{Cache-efficient algorithms:} Designed theoretically good cache-efficient external memory algorithms that do not degrade in the face of memory fluctuations that are common in the most modern systems.} 
-\item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment.}
-\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (ext4, btrfs, xfs, zfs, and f2fs) as well as a write-optimized in-kernel filesystem \textit{BetrFS}.}
-\item \justifying{\textbf{Machine-learning augmented algorithms:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles.}
+\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems. \hyperref[sec:pubs]{[Manuscript prepared to be submitted in VLDB'22]} \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
+\item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment. [Manuscript in preparation] \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
+\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\textit{ext4}, \textit{btrfs}, \textit{xfs}, \textit{zfs}, and \textit{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \textit{BetrFS}. \hyperref[sec:pubs]{[Article submitted in ACM TOCS]} \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
+\item \justifying{\textbf{Machine-learning augmented algorithms:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles \hyperref[sec:pubs]{[Paper published in WALCOM'22]} and working on designing green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
 \resumeItemListEnd
 \resumeSubheading{Stony Brook University}{Stony Brook,NY}{Teaching Assistant}{Fall 2018 - Spring 2019}
 \resumeItemListStart
@@ -107,8 +108,8 @@
 \item \textbf{Courses:} Analysis of Algorithms, Computer Networks, Discrete Maths, Data Science, Introduction to Computer Vision, Theory of Database Systems, Medical Imaging.
 \item \textbf{Class Projects:} 
 \begin{itemize}
-    \item {Optimizing network congestion window using Ricci Curvature.}
-    \item {Semantic segmentation using U-Net and instance segmentation of nuclei using Mask R-CNN.}
+    \item \href{https://github.com/ArghyaB118/network_curvature/blob/master/Text/project_534.pdf}{Optimizing network congestion window using Ricci Curvature.}
+    \item \href{https://github.com/ArghyaB118/Image_Segmentation/blob/main/Project_CSE527/Final_Report.pdf}{Semantic segmentation using U-Net and instance segmentation of nuclei using Mask R-CNN.}
     \item {Identifying fundraising donors with Logistic Regression, Decision Tree, Random Forest and LightGBM.}
 \end{itemize}
 \resumeItemListEnd
@@ -132,10 +133,13 @@
 
 %-----------PUBLICATIONS-----------------
 \section{Selected Publications \& Posters}
+\label{sec:pubs}
 \resumeSubHeadingListStart
 \item{\textbf{Bhattacharya, A.}, Das, R. {``Machine Learning Advised Ski Rental Problem with a Discount,''} \textit{16th International Conference and Workshops on Algorithms and Computation (WALCOM'22)}.}
 \item {Conway, A., Bakshi, A. \textbf{Bhattacharya, A.}, Bennett, R., Jiao, Y., Knorr, E., Bender, M.A., Jannen, W., Johnson, R., Kuszmaul, B.C., Porter, D.E., Zhan, Y., and Farach-Colton, M. {``File System Aging,''} submitted in \textit{ACM Transactions on Computer Systems (TOCS)}.}
-\item {\textbf{Bhattacharya, A.} \href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}.}
+\item {\textbf{Bhattacharya, A.}, Chowdhury, A., Xu, H., Chowdhury, Rezaul A., Das, R., Johnson, R., and Bender, M. A. {``When Are Cache-Oblivious Algorithms Cache Adaptive?''} to be submitted in \textit{48th International Conference on Very Large Data Bases (VLDB'22)}.}
+\item {\textbf{Bhattacharya, A.}
+\href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}.}
 \item {\textbf{Bhattacharya, A.}, Choudhury, D., and Dey, D. \href{https://doi.org/10.1007/s00500-016-2395-4}{``Edge-enhanced Bi-dimensional empirical mode decomposition based emotion recognition using fusion of feature set,"} \textit{Soft Computing, Springer (2018) 22: 889--903}.}
 \item {\textbf{Bhattacharya, A.}, Choudhury, D., and Dey, D. \href{https://doi.org/10.1109/CMI.2016.7413766}{``Emotion Recognition from Facial Image Analysis Using Composite Similarity Measure Aided Bi-dimensional Empirical Mode Decomposition,"} \textit{First IEEE Conference on Control, Measurement and Instrumentation (CMI’16)}.}
 \item {Biswas, M., \textbf{Bhattacharya, A.}, and Dey, D. \href{https://doi.org/10.1109/WiSPNET.2016.7566521} {``Classification of Various Colon Diseases in Colonoscopy Video using Cross-Wavelet Features,"} \textit{IEEE International Conference on Wireless Communications Signal Processing and Networking (WiSPNET'16)}.}
