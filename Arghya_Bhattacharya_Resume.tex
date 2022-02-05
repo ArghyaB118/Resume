@@ -79,18 +79,23 @@
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
 \resumeSubHeadingListStart
-\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Research Project Assistant}{Summer 2019 - Present}
+\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Research Project Assistant}{Jun 2019 - Present}
 \resumeItemListStart
-\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems. \hyperref[sec:pubs]{[Manuscript prepared to be submitted in VLDB'22]} \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
+\item \justifying{\textbf{Machine-learning augmentation:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles \hyperref[sec:pubs]{[Paper published in WALCOM'22]}. The empirical framework includes evaluation on synthetic and real-world datasets using ML models for time-series prediction, such as LSTM and FbProphet \hyperref[sec:pubs]{[Article submitted in Algorithmica, Springer]}. Introduced external-memory data structures (learning-indexed B-tree) for efficient range queries [Manuscript in preparation]. Designed green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
+
+\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems. \hyperref[sec:pubs]{[Paper submitted in SPAA'22]} \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
+
 \item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment. [Manuscript in preparation] \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
-\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\textit{ext4}, \textit{btrfs}, \textit{xfs}, \textit{zfs}, and \textit{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \textit{BetrFS}. \hyperref[sec:pubs]{[Article submitted in ACM TOCS]} \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
-\item \justifying{\textbf{Machine-learning augmented algorithms:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles \hyperref[sec:pubs]{[Paper published in WALCOM'22]} and working on designing green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
+
+\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\texttt{ext4}, \texttt{btrfs}, \texttt{xfs}, \texttt{zfs}, and \texttt{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \texttt{BetrFS}. \hyperref[sec:pubs]{[Article submitted in ACM TOCS]} \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
 \resumeItemListEnd
-\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Teaching Assistant}{Fall 2018 - Spring 2019}
+
+\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Teaching Assistant}{Sept 2018 - May 2019}
 \resumeItemListStart
 \item {Fundamentals of Information Technology (ISE 218), Prof. Kevin McDonnell}
 \item {System Fundamentals - II (CSE 320), Prof. Eugene Stark}
 \resumeItemListEnd
+
 \resumeSubheading 
 {National University of Singapore}{Singapore}
 {Research Engineer}{May 2018 - Aug 2018}
@@ -111,7 +116,7 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Stony Brook University}{New York, USA}
-{Ph.D. Candidate, Dept. of Computer Science}{Fall 2018 -- Present}
+{Ph.D. Candidate, Dept. of Computer Science}{Fall 2018 -- Spring 2023 (expected)}
 \resumeItemListStart
 \item \textbf{Advisor:} \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}, \textbf{Collaborator:} \href{https://www3.cs.stonybrook.edu/~rezaul/}{Rezaul A.\ Chowdhury}
 \item Cumulative GPA 3.78 / 4.0
@@ -145,14 +150,24 @@
 \section{Selected Publications \& Posters}
 \label{sec:pubs}
 \resumeSubHeadingListStart
-\item{\textbf{Bhattacharya, A.}, Das, R. {``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation (WALCOM'22)}}.}
-\item {Conway, A., Bakshi, A. \textbf{Bhattacharya, A.}, Bennett, R., Jiao, Y., Knorr, E., Bender, M.A., Jannen, W., Johnson, R., Kuszmaul, B.C., Porter, D.E., Zhan, Y., and Farach-Colton, M. {``File System Aging,''} submitted in \textit{ACM Transactions on Computer Systems (TOCS)}.}
-\item {\textbf{Bhattacharya, A.}, Chowdhury, A., Xu, H., Chowdhury, Rezaul A., Das, R., Johnson, R., and Bender, M. A. {``When Are Cache-Oblivious Algorithms Cache Adaptive?''} to be submitted in \textit{48th International Conference on Very Large Data Bases (VLDB'22)}.}
-\item {\textbf{Bhattacharya, A.}
+\item{\textbf{Arghya Bhattacharya}, Rathish Das, {``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation (WALCOM'22)}}.}
+
+\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender, {``Machine Learning Advised Ski Rental Problem with a Market Interest Rate,''}, under review in \textit{Algorithmica, Springer}.}
+
+\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender,  {``Learning Indexed B-tree,''}, to be submitted in \href{https://hpi.de/algo2022/esa/}{\textit{30th Annual European Symposium on Algorithms (ESA'22)}}.}
+
+\item {Alex Conway, Ainesh Bakshi, \textbf{Arghya Bhattacharya}, Rory Bennett, Yijheng Jiao, Erik Knorr, Michael A. Bender, Willaim Jannen, Rob Johnson, Bradley C. Kuszmaul, Donald E. Porter, Yang Zhan, and Martin Farach-Colton, {``File System Aging,''} under review in \textit{ACM Transactions on Computer Systems (TOCS)}.}
+
+\item {\textbf{Arghya Bhattacharya}, Abiyaz Chowdhury, Helen Xu, Rezaul A. Chowdhury, Rathish Das, Rob Johnson, and Michael A. Bender, {``When Are Cache-Oblivious Algorithms Cache Adaptive?''} under review in \href{https://spaa.acm.org}{\textit{16th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'22)}}}.
+
+\item {\textbf{Arghya Bhattacharya}
 \href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}.}
-\item {\textbf{Bhattacharya, A.}, Choudhury, D., and Dey, D. \href{https://doi.org/10.1007/s00500-016-2395-4}{``Edge-enhanced Bi-dimensional empirical mode decomposition based emotion recognition using fusion of feature set,"} \textit{Soft Computing, Springer (2018) 22: 889--903}.}
-\item {\textbf{Bhattacharya, A.}, Choudhury, D., and Dey, D. \href{https://doi.org/10.1109/CMI.2016.7413766}{``Emotion Recognition from Facial Image Analysis Using Composite Similarity Measure Aided Bi-dimensional Empirical Mode Decomposition,"} \textit{First IEEE Conference on Control, Measurement and Instrumentation (CMI’16)}.}
-\item {Biswas, M., \textbf{Bhattacharya, A.}, and Dey, D. \href{https://doi.org/10.1109/WiSPNET.2016.7566521} {``Classification of Various Colon Diseases in Colonoscopy Video using Cross-Wavelet Features,"} \textit{IEEE International Conference on Wireless Communications Signal Processing and Networking (WiSPNET'16)}.}
+
+\item {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1007/s00500-016-2395-4}{``Edge-enhanced Bi-dimensional empirical mode decomposition based emotion recognition using fusion of feature set,"} \textit{Soft Computing, Springer (2018) 22: 889--903}.}
+
+\item {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1109/CMI.2016.7413766}{``Emotion Recognition from Facial Image Analysis Using Composite Similarity Measure Aided Bi-dimensional Empirical Mode Decomposition,"} \textit{First IEEE Conference on Control, Measurement and Instrumentation (CMI’16)}.}
+
+\item {Mainak Biswas, \textbf{Arghya Bhattacharya}, and Debangshu Dey, \href{https://doi.org/10.1109/WiSPNET.2016.7566521} {``Classification of Various Colon Diseases in Colonoscopy Video using Cross-Wavelet Features,"} \textit{IEEE International Conference on Wireless Communications Signal Processing and Networking (WiSPNET'16)}.}
 \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
