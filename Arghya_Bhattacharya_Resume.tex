@@ -21,9 +21,11 @@
 \vspace{5pt}
 {24 University Dr, East Setauket, NY - 11733} \\
 {\url{https://www3.cs.stonybrook.edu/~argbhattacha/}} \\
-{Email: \href{mailto:argbhattacha@cs.stonybrook.edu}{argbhattacha@cs.stonybrook.edu}}
+{{\href{mailto:argbhattacha@cs.stonybrook.edu}{\includegraphics[width=0.11in,height=0.08in]{Figures/email.png}}} 
+\href{mailto:argbhattacha@cs.stonybrook.edu}{argbhattacha@cs.stonybrook.edu}}
 \hspace{10pt}
-{Phone: \href{tel:(+1)934-777-9896}{+1 (934) 777-9896}}
+{{\href{tel:(+1)934-777-9896}{\includegraphics[width=0.1in,height=0.1in]{Figures/call.png}}}
+\href{tel:(+1)934-777-9896}{+1 (934) 777-9896}}
 \end{center}
 %\maintitle{Arghya Bhattacharya}{}{}
 
@@ -41,18 +43,22 @@
 \fi
 
 \section{Summary}
-\justifying{Fourth-year doctoral candidate with experience in both academic research and industry; experienced in designing cache-friendly algorithms that are good in both theory and practice, and machine-learning augmented algorithms for traditional online problems; actively looking for internship positions in applied sciences for Summer'22, specifically, in the field of software engineering, machine learning, and data science.}
+\justifying{Fourth-year doctoral candidate with experience in both academic research and industry; experienced in designing cache-friendly algorithms that are good in both theory and practice, and machine-learning augmented algorithms for traditional online problems.}
+%actively looking for internship positions in applied sciences for Summer'22, specifically, in the field of software engineering, machine learning, and data science.}
+
 
 \begin{minipage}{0.65\textwidth}
+\section{Short Bio}
 \resumeSubHeadingListStart
 \item \textbf{Ph.D. Candidate}, Dept.\ of Computer Science, Stony Brook University
-\item \textbf{Member}, \href{https://sbuconsultingclub.wixsite.com/sbucc}{Stony Brook University Consulting Club} 
-\item \textbf{Mentor}, HS-WISE (High School Women in Science and Engineering)
-\item \textbf{JBNSTS Senior Scholar'12} \href{https://jbnsts.ac.in}{(Jagadis Bose National Science Talent Search)}
+\item \textbf{HS-WISE Mentor}, \href{https://www.stonybrook.edu/commcms/wise/pre-college/high_school.php}{High School Women in Science and Engineering}
+\item \textbf{JBNSTS Senior Scholar'12} \href{https://jbnsts.ac.in}{Jagadis Bose National Science Talent Search}
 \item \textbf{Administrative Member}, \href{https://sites.google.com/view/jbspdf/home}{JB Scholars Professional Development Forum}
+\item \textbf{Hackathon Enthusiast}, Winner of \href{https://devpost.com/software/cryptopiens}{Hack@CEWIT'22}, \href{https://devpost.com/software/steganography-attack}{SBUHack'21}, etc.
+%\item \textbf{Member}, \href{https://sbuconsultingclub.wixsite.com/sbucc}{Stony Brook University Consulting Club} 
 \resumeSubHeadingListEnd
 \end{minipage}
-\begin{minipage}{0.1\textwidth}
+\begin{minipage}{0.2\textwidth}
 \end{minipage}
 \begin{minipage}{0.25\textwidth}
 \subsection*{Research Interest}
@@ -76,38 +82,85 @@
 \end{center}
 \end{minipage}
 
+\iffalse
+\subsection*{Scores}
+\begin{tabular*}{\textwidth}{ m{5cm} }
+\rowcolor{Gray} GRE Q:170; V:152, AWA:4 \\
+\rowcolor{Gray} CAT'17 97.61\%ile \\
+\rowcolor{Gray} TOEFL iBT 106 \\
+\end{tabular*}
+\fi
+
 %-----------WORK EXPERIENCE-----------------
 \section{Work Experience}
 \resumeSubHeadingListStart
-\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Research Project Assistant}{Jun 2019 - Present}
+\resumeSubheading{Nokia Bell Labs}{Virtual Office, NY}
+{Cloud and Networking Intern, Manager: \href{https://www.bell-labs.com/about/researcher-profiles/tvlakshman/}{T. V. Lakshman}, Supervisor: 
+\href{https://ieeexplore.ieee.org/author/37085469422}{Edward Grinshpun}, \href{https://www.bell-labs.com/about/researcher-profiles/chuckpayette/}{Chuck Payette}
+}{Jun. 2022 -- Aug. 2022}
 \resumeItemListStart
-\item \justifying{\textbf{Machine-learning augmentation:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles \hyperref[sec:pubs]{[Paper published in WALCOM'22]}. The empirical framework includes evaluation on synthetic and real-world datasets using ML models for time-series prediction, such as LSTM and FbProphet \hyperref[sec:pubs]{[Article submitted in Algorithmica, Springer]}. Introduced external-memory data structures (learning-indexed B-tree) for efficient range queries [Manuscript in preparation]. Designed green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
+\item \justifying{Designing algorithms for low-latency live video streaming.}
+\resumeItemListEnd
 
-\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems. \hyperref[sec:pubs]{[Paper submitted in SPAA'22]} \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
+\resumeSubheading{Stony Brook University}{Stony Brook,NY}
+{Research Project Assistant, Advisor: \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}}
+{Jun. 2019 -- Present}
+\resumeItemListStart
+\item \justifying{\textbf{Machine-learning augmentation:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles \hyperref[sec:pubs]{[Paper published in WALCOM'22]}; the journal version deals with a more generalized version of the problem with an arbitrarily fluctuating discount. \hyperref[sec:pubs]{[Article submitted in TCS, Elsevier]}
+%The empirical framework includes evaluation on synthetic and real-world datasets using ML models for time-series prediction, such as LSTM and FbProphet \hyperref[sec:pubs]{[Article submitted in Algorithmica, Springer]}. 
+%Introduced external-memory data structures (learning-indexed B-tree) for efficient range queries [Manuscript in preparation]. 
+Designed green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
+
+\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems. \hyperref[sec:pubs]{[Paper submitted in ESA'22]} \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
 
 \item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment. [Manuscript in preparation] \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
 
 \item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\texttt{ext4}, \texttt{btrfs}, \texttt{xfs}, \texttt{zfs}, and \texttt{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \texttt{BetrFS}. \hyperref[sec:pubs]{[Article submitted in ACM TOCS]} \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
 \resumeItemListEnd
 
-\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Teaching Assistant}{Sept 2018 - May 2019}
+\iffalse
+\resumeSubheading{High School Women in Science and Engineering (HS-WISE)}{Stony Brook, NY}{Mentor}{Sep. 2019 - Present}
 \resumeItemListStart
-\item {Fundamentals of Information Technology (ISE 218), Prof. Kevin McDonnell}
-\item {System Fundamentals - II (CSE 320), Prof. Eugene Stark}
+\item {Lessons: Basics of probability and Thinking algorithmically.}
+\item {Shoreham-Wading River High School (2019-20), Comsewogue High School (2020-21), Hauppauge High School (2021-22).}
 \resumeItemListEnd
+\resumeSubheading{Stony Brook University}{Stony Brook,NY}{Teaching Assistant}{Sep. 2018 -- May. 2019}
+\resumeItemListStart
+\item {Fundamentals of Information Technology (ISE 218), Instructor: Prof. Kevin McDonnell}
+\item {System Fundamentals - II (CSE 320), Instructor: Prof. Eugene Stark}
+\resumeItemListEnd
+\fi
 
 \resumeSubheading 
 {National University of Singapore}{Singapore}
-{Research Engineer}{May 2018 - Aug 2018}
+{Research Engineer, Advisor: \href{https://www.ece.nus.edu.sg/gems/profhome.html}{Prof.\ Dipti Srinivasan}}{May. 2018 -- Aug. 2018}
 \resumeItemListStart
-\item {Reviewed the performance of multi-objective optimization algorithms using evolutionary computation based on decomposition techniques under \href{https://www.ece.nus.edu.sg/gems/profhome.html}{Prof. Dipti Srinivasan}.}
+\item {Reviewed the performance of multi-objective optimization algorithms using evolutionary computation based on decomposition techniques.}
 \resumeItemListEnd
+
 \resumeSubheading
 {Pricewaterhouse Coopers (PwC) India Pvt. Ltd.}{Kolkata, India}
-{Consultant}{July 2016 - Sept 2017}
+{Consultant, Manager: \href{https://www.linkedin.com/in/sudipt0sarkar/?originalSubdomain=in}{Sudipto Sarkar}}{Jul. 2016 -- Sep. 2017}
 \resumeItemListStart
 \item {Built a payroll automation system using DotNet technologies using MVC architecture.}
 \item {Implemented the Microsoft Navision enterprise resource planning software (ERP) for finance, procurement, and inventory management.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Jadavpur University}{Kolkata, India}
+{Undergraduate Research Intern, Advisor: 
+{\href{https://scholar.google.com/citations?hl=en&user=tlzV8CAAAAAJ&view_op=list_works&sortby=pubdate}{Prof.\ Debangshu Dey}}
+}{Jun. 2015 -- May. 2016}
+\resumeItemListStart
+\item {Designed algorithms for affective computing: a study of Bi-dimensional Empirical Mode Decomposition (BEMD) based feature extraction, Principle Component Analysis (PCA), Linear Discriminant Analysis (LDA) based dimensionality reduction, Gray-level Co-occurrence Matrix (GLCM), Histogram of Oriented Gradients (HOG), Local Ternary Pattern (LTP) based feature elimination, and Multi-class Support Vector Machine (SVM), k-Nearest Neighbor (k-NN) based classification in context of emotion recognition \hyperref[sec:pubs]{[Article published in Soft computing, Springer]}}.
+\item {Designed tools and algorithms for biomedical image processing and cancer detection using Optical Colonoscopy videos \hyperref[sec:pubs]{[Paper published in WiSPNET'16]}}.
+\resumeItemListEnd
+
+\resumeSubheading
+{Indian Institute Technology, Kharagpur}{Kharagpur, India}
+{Undergraduate Summer Intern, Advisor: \href{http://www.facweb.iitkgp.ac.in/~jay/}{Prof.\ Jayanta Mukhopadhyay}}{Jun. 2014 -- Aug. 2014}
+\resumeItemListStart
+\item {Design of a Portable Electronic Device for Non-invasive continuous measurement of Blood Pressure by Bio-impedance measurement and Assessment of Cardiac Health in larger perspective.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -116,11 +169,11 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Stony Brook University}{New York, USA}
-{Ph.D. Candidate, Dept. of Computer Science}{Fall 2018 -- Spring 2023 (expected)}
+{Ph.D. Candidate, Dept. of Computer Science}{Sep. 2018 -- Dec. 2023 (expected)}
 \resumeItemListStart
 \item \textbf{Advisor:} \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}, \textbf{Collaborator:} \href{https://www3.cs.stonybrook.edu/~rezaul/}{Rezaul A.\ Chowdhury}
 \item Cumulative GPA 3.78 / 4.0
-\item \textbf{Courses:} Analysis of Algorithms, Computer Networks, Discrete Maths, Data Science, Introduction to Computer Vision, Theory of Database Systems, Medical Imaging.
+\item \textbf{Graduate Courses:} Analysis of Algorithms, Computer Networks, Discrete Maths, Data Science, Introduction to Computer Vision, Theory of Database Systems, Medical Imaging.
 \item \textbf{Class Projects:} 
 \begin{itemize}
     \item \href{https://github.com/ArghyaB118/network_curvature/blob/master/Text/project_534.pdf}{Optimizing network congestion window using Ricci Curvature.}
@@ -128,6 +181,7 @@
     \item {Identifying fundraising donors with Logistic Regression, Decision Tree, Random Forest and LightGBM.}
 \end{itemize}
 \resumeItemListEnd
+
 \resumeSubheading
 {Jadavpur University}{Kolkata, India}
 {B.E. in Electrical Engineering }{Jul. 2012 -- May. 2016}
@@ -135,14 +189,19 @@
 \item {Cumulative GPA: 7.74/10 Total marks: 72.69/100 with First Class}
 \item {Qualified GATE 2016 in Electrical Engineering Score: 45.66 GATE Score: 584/1000 Rank: 3278}
 \item {\textbf{Related Coursework}: Advanced Instrumentation-I, Advanced Instrumentation-II, Digital Signal Processing, Numerical Analysis and Computer Programming, Reliability Engineering, Signals and Systems, Circuit Theory, Control System Engineering}
-\item \textbf{Class Projects:} 
-\begin{itemize}
-    \item {Algorithms used in affective computing for Human Machine Interaction: a study of Bi-dimensional Empirical Mode Decomposition (BEMD) based feature extraction, Principle Component Analysis (PCA), Linear Discriminant Analysis (LDA) based dimensionality reduction, Gray-level Co-occurrence Matrix (GLCM), Histogram of Oriented Gradients (HOG), Local Ternary Pattern (LTP) based feature elimination, and Multi-class Support Vector Machine (SVM), k-Nearest Neighbor (k-NN) based classification in context of emotion recognition.}
-    \item {Biomedical Image Processing tools and algorithms and Cancer Detection using Optical Colonoscopy Videos.}
-    \item {Design of a Portable Electronic Device for Non-invasive continuous measurement of Blood Pressure by Bio-impedance measurement and Assessment of Cardiac Health in larger perspective.}
-\end{itemize}
 \resumeItemListEnd
+\iffalse
 %Schooling, GRE, TOEFL are not important for Internship Applications.
+\resumeSubheading
+{Howrah Zilla School}{Howrah, India}
+{Secondary Education and Higher-Secondary Education}{2002 - 2012}
+\resumeItemListStart
+    \item {$367^{th}$ in the West Bengal Joint Entrance Examination, 2012.}
+    \item {State Rank of $372^{th}$ \comm{(General - 352nd)}in the AIEEE, 2012.}
+    \item {82\% in Higher Secondary Examination with Science Major (+2 level), with 90.5\% in the Mathematics and Physics, 2012 West Bengal Council of Higher Secondary Education.}
+    \item {85\% in Madhyamik Examination (10 level), 2010, with 95.33\% in the Science group (Mathematics, Science and Life Science) West Bengal Board of Secondary Education.}
+\resumeItemListEnd
+\fi
 \resumeSubHeadingListEnd 
 
 
@@ -150,15 +209,15 @@
 \section{Selected Publications \& Posters}
 \label{sec:pubs}
 \resumeSubHeadingListStart
-\item{\textbf{Arghya Bhattacharya}, Rathish Das, {``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation (WALCOM'22)}}.}
+\item{\textbf{Arghya Bhattacharya}, Rathish Das, \href{https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18}{``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation (WALCOM'22)}}.}
 
-\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender, {``Machine Learning Advised Ski Rental Problem with a Market Interest Rate,''}, under review in \textit{Algorithmica, Springer}.}
+\item{\textbf{Arghya Bhattacharya}, Rathish Das, {``Machine Learning Advised Algorithms for the Ski Rental Problem with a Discount''}, under review in \href{https://www.sciencedirect.com/journal/theoretical-computer-science}{\textit{Theoretical Computer Science, Elsevier}}.}
 
-\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender,  {``Learning Indexed B-tree,''}, to be submitted in \href{https://hpi.de/algo2022/esa/}{\textit{30th Annual European Symposium on Algorithms (ESA'22)}}.}
+%\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender,  {``Learning Indexed B-tree,''}, to be submitted in \href{https://hpi.de/algo2022/esa/}{\textit{30th Annual European Symposium on Algorithms (ESA'22)}}.}
 
 \item {Alex Conway, Ainesh Bakshi, \textbf{Arghya Bhattacharya}, Rory Bennett, Yijheng Jiao, Erik Knorr, Michael A. Bender, Willaim Jannen, Rob Johnson, Bradley C. Kuszmaul, Donald E. Porter, Yang Zhan, and Martin Farach-Colton, {``File System Aging,''} under review in \textit{ACM Transactions on Computer Systems (TOCS)}.}
 
-\item {\textbf{Arghya Bhattacharya}, Abiyaz Chowdhury, Helen Xu, Rezaul A. Chowdhury, Rathish Das, Rob Johnson, and Michael A. Bender, {``When Are Cache-Oblivious Algorithms Cache Adaptive?''} under review in \href{https://spaa.acm.org}{\textit{16th ACM Symposium on Parallelism in Algorithms and Architectures (SPAA'22)}}}.
+\item {\textbf{Arghya Bhattacharya}, Helen Xu, Abiyaz Chowdhury, Rezaul A. Chowdhury, Rathish Das, Rob Johnson, and Michael A. Bender, {``When Are Cache-Oblivious Algorithms Cache Adaptive?''} under review in \href{https://algo2022.eu/esa/}{\textit{30th Annual European Symposium on Algorithms (ESA'22)}}.}
 
 \item {\textbf{Arghya Bhattacharya}
 \href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}.}
