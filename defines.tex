@@ -28,11 +28,11 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[5]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4}\\
+      \textbf{#1}, {\small#5} & #2 \\
+      \textit{\small#3} & \textit{\small#4}\\
       
      
     \end{tabular*}\vspace{-5pt}
@@ -46,6 +46,10 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%%% adding for references/publications
+\newcommand{\resumePublicationListStart}{\begin{enumerate}[leftmargin=*,label={[\arabic*]}]}
+\newcommand{\resumePublicationListEnd}{\end{enumerate}}
+%%% end here
 \makeatletter
 \newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 \makeatother
