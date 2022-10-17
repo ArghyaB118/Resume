@@ -8,7 +8,7 @@
 %------------------------
 % Resource: https://hwpi.harvard.edu/files/ocs/files/hes-resume-cover-letter-guide.pdf
 % https://mitcommlab.mit.edu/eecs/commkit/cvresume/
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,11pt]{article}
 \input{packages}
 \input{defines}
 \begin{document}
@@ -43,11 +43,11 @@
 \fi
 
 \section{Summary}
-\justifying{Fourth-year doctoral candidate with experience in both academic research and industry; experienced in designing cache-friendly algorithms that are good in both theory and practice, and machine-learning augmented algorithms for traditional online problems.}
-%actively looking for internship positions in applied sciences for Summer'22, specifically, in the field of software engineering, machine learning, and data science.}
+\justifying{I am a fifth-year doctoral candidate with experience in both academic research and industry. My thesis sheds light on how to design cache-friendly algorithms that breed both theoretical and practical advantages. These algorithms are helpful for shared memory and cloud systems. I also design machine-learning advised algorithms for traditional online decision-making problems.
+I am actively looking for internship positions in applied sciences\ignore{ for Summer'23}, specifically, in the field of software engineering and machine learning.}
 
 
-\begin{minipage}{0.65\textwidth}
+\begin{minipage}{0.7\textwidth}
 \section{Short Bio}
 \resumeSubHeadingListStart
 \item \textbf{Ph.D. Candidate}, \href{https://www.cs.stonybrook.edu/}{Dept.\ of Computer Science, Stony Brook University}
@@ -59,15 +59,16 @@
 %\item \textbf{Member}, \href{https://sbuconsultingclub.wixsite.com/sbucc}{Stony Brook University Consulting Club} 
 \resumeSubHeadingListEnd
 \end{minipage}
-\begin{minipage}{0.2\textwidth}
-\end{minipage}
+%\begin{minipage}{0.2\textwidth}
+%\end{minipage}
 \begin{minipage}{0.25\textwidth}
 \subsection*{Research Interest}
 \begin{center}
 \begin{tabular*}{\textwidth}{ m{5cm} }
 \rowcolor{Gray} External memory algorithm \\
 \rowcolor{Gray} Parallel algorithm \\
-\rowcolor{Gray} Machine learning \\
+\rowcolor{Gray} Machine learning (ML) \\
+\rowcolor{Gray} Computer networks \\
 \rowcolor{Gray} Online algorithm \\
 \rowcolor{Gray} Filesystem aging \\
 \end{tabular*}
@@ -101,23 +102,25 @@
 {Jun. 2022 -- Aug. 2022}
 {Network Systems and Security Research Lab, Bell Labs Core Research}
 \resumeItemListStart
-\item \justifying{Designing Machine Learning advised algorithms for low-latency live video streaming for 5G wireless networks.}
+\item \justifying{Designed out-of-band ML-based prediction augmented congestion control algorithms for low-latency, high-volume variable-bitrate applications (such as live video streaming) for 5G wireless network systems.}
 \resumeItemListEnd
 \resumeSubheading{Stony Brook University}{Stony Brook,NY}
-{Research Project Assistant, Advisor: \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}}
+{Research Project Assistant, Advisor: \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}, Collaborator: \href{https://www3.cs.stonybrook.edu/~rezaul/}{Rezaul A.\ Chowdhury}}
 {Jun. 2019 -- Present}
 {Algorithms Lab, Dept.\ of Computer Science}
 \resumeItemListStart
-\item \justifying{\textbf{Machine-learning augmentation:} Redesigned traditional online algorithms for rent-or-buy problems with augmentation by single and multiple machine learning oracles [2]; the journal version deals with a more generalized version of the problem with an arbitrarily fluctuating discount [3].
+\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a, b, c)$-regular algorithms (a class of recursive and cache-oblivious algorithms) are \textbf{cache-adaptive} for external-memory applications, i.e., do not degrade in the face of memory fluctuations~\ref{paper:esa22}. These dynamic memory fluctuations are common in most modern shared-memory and cloud systems. This work closes the logarithmic I/O-performance gap between (a,b,c)-regularity and cache-adaptivity previously shown in theory. \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}} The journal version of the work builds an empirical framework to extend the study of the cache-adaptivity of external-memory algorithms in a \textbf{multi-threading ecosystem} [Manuscript in preparation]. \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
+
+%\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular algorithms (a class of recursive and cache-oblivious algorithms) are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern shared-memory and cloud systems~\ref{paper:esa22}. This work closes the logarithmic performance gap previously shown in theory. \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
+
+%\item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment. [Manuscript in preparation] \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
+
+\item \justifying{\textbf{ML advised algorithms:} Redesigned traditional online algorithms for \textbf{rent-or-buy} problems with augmentation by single and multiple ML oracles~\ref{paper:walcom22}; the journal version deals with a more generalized version of the problem with an arbitrarily fluctuating discount on the rent of the resource~\ref{paper:tcs22}.
 %The empirical framework includes evaluation on synthetic and real-world datasets using ML models for time-series prediction, such as LSTM and FbProphet \hyperref[sec:pubs]{[Article submitted in Algorithmica, Springer]}. 
 %Introduced external-memory data structures (learning-indexed B-tree) for efficient range queries [Manuscript in preparation]. 
-Designed green paging and parallel paging algorithms with ML augmentation [Manuscript in preparation].}
+The follow-up work revisits conventional online decision-making problems, such as secretary selection problems~\ref{paper:grd22}, green paging, parallel paging, and list access problem, and design ML-advised algorithms with improved performance [Manuscript in preparation]. \href{https://github.com/ArghyaB118/ml-advice}{\textbf{[code]}}}
 
-\item \justifying{\textbf{Cache-efficient algorithms:} Designed an empirical framework to evaluate when $(a,b,c)$-regular cache-oblivious algorithms are cache-efficient as external memory algorithms and do not degrade in the face of memory fluctuations that are common in most modern systems [1]. \href{https://github.com/ArghyaB118/cache_adaptivity}{\textbf{[code]}}} 
-
-\item \justifying{\textbf{Threading ecosystem:} Built a framework to evaluate the performance of external memory algorithms with multi-threading in a multi-program environment. [Manuscript in preparation] \href{https://github.com/ArghyaB118/threading_ecosystems}{\textbf{[code]}}}
-
-\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\texttt{ext4}, \texttt{btrfs}, \texttt{xfs}, \texttt{zfs}, and \texttt{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \texttt{BetrFS} [4]. \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
+\item \justifying{\textbf{Filesystem aging:} Evaluated microbenchmarks and application-level fragmentation benchmarks to measure slowdown in the random read performance for several production filesystems (\texttt{ext4}, \texttt{btrfs}, \texttt{xfs}, \texttt{zfs}, and \texttt{f2fs}) as well as a $B^{\varepsilon}$-tree based write-optimized in-kernel filesystem \texttt{BetrFS} \ref{paper:tocs22}. \href{https://github.com/ArghyaB118/filesystem_aging}{\textbf{[code]}}}
 \resumeItemListEnd
 
 \iffalse
@@ -155,8 +158,8 @@ Designed green paging and parallel paging algorithms with ML augmentation [Manus
 {\href{https://scholar.google.com/citations?hl=en&user=tlzV8CAAAAAJ&view_op=list_works&sortby=pubdate}{Prof.\ Debangshu Dey}}}
 {Jun. 2015 -- May. 2016}{Measurement and Instrumentation Lab, Dept.\ of Electrical Engg.}
 \resumeItemListStart
-\item {Designed algorithms for affective computing: a study of Bi-dimensional Empirical Mode Decomposition (BEMD) based feature extraction, Principle Component Analysis (PCA), Linear Discriminant Analysis (LDA) based dimensionality reduction, Gray-level Co-occurrence Matrix (GLCM), Histogram of Oriented Gradients (HOG), Local Ternary Pattern (LTP) based feature elimination, and Multi-class Support Vector Machine (SVM), k-Nearest Neighbor (k-NN) based classification in context of emotion recognition [6, 7]}.
-\item {Designed algorithms for biomedical image processing and cancer detection using Optical Colonoscopy videos [8]}.
+\item {Designed algorithms for affective computing: a study of Bi-dimensional Empirical Mode Decomposition (BEMD) based feature extraction, Principle Component Analysis (PCA), Linear Discriminant Analysis (LDA) based dimensionality reduction, Gray-level Co-occurrence Matrix (GLCM), Histogram of Oriented Gradients (HOG), Local Ternary Pattern (LTP) based feature elimination, and Multi-class Support Vector Machine (MSVM), k-Nearest Neighbor (k-NN) based classification in context of emotion recognition \ref{paper:softc18} \ref{paper:cmi16}}.
+\item {Designed algorithms for biomedical image processing and cancer detection using Optical Colonoscopy videos by cross-wavelet feature extraction~\ref{paper:wispnet16}}.
 \resumeItemListEnd
 
 \resumeSubheading
@@ -164,7 +167,7 @@ Designed green paging and parallel paging algorithms with ML augmentation [Manus
 {Undergraduate Summer Intern, Advisor: \href{http://www.facweb.iitkgp.ac.in/~jay/}{Prof.\ Jayanta Mukhopadhyay}}
 {Jun. 2014 -- Aug. 2014}{Telemedicine Lab, Dept.\ of Computer Science}
 \resumeItemListStart
-\item {Design of a Portable Electronic Device for Non-invasive continuous measurement of Blood Pressure by Bio-impedance measurement and Assessment of Cardiac Health in larger perspective.}
+\item {Designed a portable electronic device for non-invasive continuous measurement of blood pressure by bio-impedance measurement and assessment of cardiac health in larger perspective.}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -173,7 +176,7 @@ Designed green paging and parallel paging algorithms with ML augmentation [Manus
 \resumeSubHeadingListStart
 \resumeSubheading
 {Stony Brook University}{New York, USA}
-{Ph.D. Candidate, Advisor: \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}, Collaborator: \href{https://www3.cs.stonybrook.edu/~rezaul/}{Rezaul A.\ Chowdhury}}
+{Ph.D. Candidate, Advisor: \href{https://www3.cs.stonybrook.edu/~bender/}{Prof. Michael A.\ Bender}}
 {Sep. 2018 -- Dec. 2023 (expected)}{Dept.\ of Computer Science}
 \resumeItemListStart
 \item Cumulative GPA 3.78 / 4.0
@@ -213,24 +216,27 @@ Designed green paging and parallel paging algorithms with ML augmentation [Manus
 \label{sec:pubs}
 \resumePublicationListStart
 
-\item {\textbf{Arghya Bhattacharya}, Helen Xu, Abiyaz Chowdhury, Rathish Das, Rezaul A.\ Chowdhury, Rob Johnson, Rishab Nithyanand, and Michael A.\ Bender, {``When Are Cache-Oblivious Algorithms Cache Adaptive? A Case Study of Matrix Multiplication and Sorting,''}  \href{https://algo2022.eu/esa/}{\textit{30th Annual European Symposium on Algorithms \textbf{(ESA'22)}}}.}
+\item \label{paper:esa22} {\textbf{Arghya Bhattacharya}, Helen Xu, Abiyaz Chowdhury, Rathish Das, Rezaul A.\ Chowdhury, Rob Johnson, Rishab Nithyanand, and Michael A.\ Bender, \href{https://drops.dagstuhl.de/opus/volltexte/2022/16954/}{``When Are Cache-Oblivious Algorithms Cache Adaptive? A Case Study of Matrix Multiplication and Sorting,''}  \href{https://algo2022.eu/esa/}{\textit{30th Annual European Symposium on Algorithms \textbf{(ESA'22)}}}.\href{https://tinyurl.com/bhattacharya-esa22-talk}{\textbf{[slides]}}}
 
-\item{\textbf{Arghya Bhattacharya}, Rathish Das, \href{https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18}{``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation \textbf{(WALCOM'22)}}}. \href{https://www.youtube.com/watch?v=CmveDP86fPg}{\textbf{[talk]}}}
+\item \label{paper:walcom22} {\textbf{Arghya Bhattacharya}, Rathish Das, \href{https://link.springer.com/chapter/10.1007/978-3-030-96731-4_18}{``Machine Learning Advised Ski Rental Problem with a Discount,''} \href{https://walcom2022.unej.ac.id/instruction-for-author/accepted-papers}{\textit{16th International Conference and Workshops on Algorithms and Computation \textbf{(WALCOM'22)}}}. \href{https://www.youtube.com/watch?v=CmveDP86fPg}{\textbf{[talk]}} \href{https://tinyurl.com/bhattacharya-walcom22-talk}{\textbf{[slides]}}}
 
-\item{\textbf{Arghya Bhattacharya}, Rathish Das, {``Machine Learning Advised Algorithms for the Ski Rental Problem with a Discount''}, under review in \href{https://www.sciencedirect.com/journal/theoretical-computer-science}{\textit{Theoretical Computer Science, Elsevier}}.}
+\item \label{paper:tcs22} {\textbf{Arghya Bhattacharya}, Rathish Das, \href{https://authors.elsevier.com/a/1fx3815DaIAszc}{``Machine Learning Advised Algorithms for the Ski Rental Problem with a Discount''}, \href{https://www.sciencedirect.com/journal/theoretical-computer-science}{\textit{Theoretical Computer Science \textbf{(TCS)}, Elsevier}}.}
 
 %\item{\textbf{Arghya Bhattacharya}, Rathish Das, and Michael A. Bender,  {``Learning Indexed B-tree,''}, to be submitted in \href{https://hpi.de/algo2022/esa/}{\textit{30th Annual European Symposium on Algorithms (ESA'22)}}.}
 
-\item {Alex Conway, Ainesh Bakshi, \textbf{Arghya Bhattacharya}, Rory Bennett, Yijheng Jiao, Erik Knorr, Michael A. Bender, Willaim Jannen, Rob Johnson, Bradley C. Kuszmaul, Donald E. Porter, Yang Zhan, and Martin Farach-Colton, {``File System Aging,''} under review in \href{https://dl.acm.org/journal/tocs}{\textit{ACM Transactions on Computer Systems (TOCS)}}.}
+\item \label{paper:tocs22} {Alex Conway, Ainesh Bakshi, \textbf{Arghya Bhattacharya}, Rory Bennett, Yijheng Jiao, Erik Knorr, Michael A. Bender, Willaim Jannen, Rob Johnson, Bradley C. Kuszmaul, Donald E. Porter, Yang Zhan, and Martin Farach-Colton, {``File System Aging,''} under review in \href{https://dl.acm.org/journal/tocs}{\textit{ACM Transactions on Computer Systems \textbf{(TOCS)}}}.}
 
-\item {\textbf{Arghya Bhattacharya}
-\href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}.}
+\item \label{paper:grd22} {\textbf{Arghya Bhattacharya},
+{``Single and Multiple Secretary Selection with ML Advice,''} \href{https://www3.cs.stonybrook.edu/~grd/index.html}{\textit{Graduate Research Day (2022), Dept.\ of Computer Science, Stony Brook University}}.}
 
-\item {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1007/s00500-016-2395-4}{``Edge-enhanced Bi-dimensional empirical mode decomposition based emotion recognition using fusion of feature set,"} \href{https://www.springer.com/journal/500}{\textit{Soft Computing, Springer} (2018) 22: 889--903}.}
+\item \label{paper:grd21} {\textbf{Arghya Bhattacharya},
+\href{https://www3.cs.stonybrook.edu/~grd/posters/GRD_2021_Poster_Arghya_Bhattacharya.pdf}{``Progress Imbalance in Multi-process Performance,''} \href{https://www3.cs.stonybrook.edu/~grd/GRD-2021/program.html}{\textit{Graduate Research Day (2021), Dept.\ of Computer Science, Stony Brook University}}. \href{https://github.com/ArghyaB118/Multiprocess_Performance/blob/main/Arghya_GRD_2021_slides.pdf}{\textbf{[slides]}}}
 
-\item {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1109/CMI.2016.7413766}{``Emotion Recognition from Facial Image Analysis Using Composite Similarity Measure Aided Bi-dimensional Empirical Mode Decomposition,"} \href{https://ieeexplore.ieee.org/xpl/conhome/7400053/proceeding}{\textit{First IEEE Conference on Control, Measurement and Instrumentation (CMI’16)}}.}
+\item \label{paper:softc18} {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1007/s00500-016-2395-4}{``Edge-enhanced Bi-dimensional empirical mode decomposition based emotion recognition using fusion of feature set,"} \href{https://www.springer.com/journal/500}{\textit{Soft Computing, Springer}} (2018) 22: 889--903.}
 
-\item {Mainak Biswas, \textbf{Arghya Bhattacharya}, and Debangshu Dey, \href{https://doi.org/10.1109/WiSPNET.2016.7566521} {``Classification of Various Colon Diseases in Colonoscopy Video using Cross-Wavelet Features,"} \href{https://ieeexplore.ieee.org/xpl/conhome/7561562/proceeding}{\textit{IEEE International Conference on Wireless Communications Signal Processing and Networking (WiSPNET'16)}}.}
+\item \label{paper:cmi16} {\textbf{Arghya Bhattacharya}, Dwaipayan Choudhury, and Debangshu Dey, \href{https://doi.org/10.1109/CMI.2016.7413766}{``Emotion Recognition from Facial Image Analysis Using Composite Similarity Measure Aided Bi-dimensional Empirical Mode Decomposition,"} \href{https://ieeexplore.ieee.org/xpl/conhome/7400053/proceeding}{\textit{First IEEE Conference on Control, Measurement and Instrumentation (CMI’16)}}.}
+
+\item \label{paper:wispnet16} {Mainak Biswas, \textbf{Arghya Bhattacharya}, and Debangshu Dey, \href{https://doi.org/10.1109/WiSPNET.2016.7566521} {``Classification of Various Colon Diseases in Colonoscopy Video using Cross-Wavelet Features,"} \href{https://ieeexplore.ieee.org/xpl/conhome/7561562/proceeding}{\textit{IEEE International Conference on Wireless Communications Signal Processing and Networking (WiSPNET'16)}}.}
 \resumePublicationListEnd
 %-------------------------------------------
 \end{document}
